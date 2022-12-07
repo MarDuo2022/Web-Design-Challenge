@@ -1,0 +1,37 @@
+.homebutton{
+    background-color: white;
+    z-index:2;
+  }
+
+div{
+    position:absolute;
+    right: 100 px;
+}
+
+
+h1, h2, h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lightseagreen;
+  }
+
+.homebutton a{
+    width: 110px;
+    background: lightseagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 12px;
+    margin: 0px 0px 0px 40px;
+  }
+
+.navbar{
+    position: absolute;
+    right:30px;
+}
+
+.navbar a{
+  background-color:white;
+}
