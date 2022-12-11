@@ -34,7 +34,7 @@
               <a class="dropdown-item" href="visualisations/temp.html">Max Temperature</a>
               <a class="dropdown-item" href="visualisations/humidity.html">Humidity</a>
               <a class="dropdown-item" href="visualisations/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="visualizsations/windSpeed.html">Wind Speed</a>
+              <a class="dropdown-item" href="visualizsations/wind.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -47,69 +47,64 @@
       </div>            
     </nav>       
   </div>  
+  <!-- End of navbar -->
 
+  <!-- Start of container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-12">
+          <div class="box" style="padding-bottom: 5px;">
+            <h3 class="title">Summary: Latitude vs. X</h3>
+            <hr>
+            <img src="assets/images/Fig1.png" class="indeximage rounded float-left" alt="Max Temp Fig">
+            <p>
+              The purpose of this project was to analyse how weather changes as you get closer to the equator. 
+              To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
+              dataset on over 500 cities.
+            </p>
+            <p>
+              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+              Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides
+              the source data and visualisations created as part of the analysis, as well as explanations and descriptions
+              of any trends and correlations witnessed.
+            </p>
+          </div>
+        </div>
 
-    <!-- End of navbar -->
-
-    <!-- Start of container -->
-          <!-- Start of Visualisations imageNav Area -->
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-7 col-md-12">
-                <div class="box" style="padding-bottom: 5px;">
-                  <h3 class="title">Summary: Latitude vs. X</h3>
-                  <hr>
-                  <img src="assets/images/Lat_vs_MaxTemp.png" class="vizualisation rounded float-left" alt="Max Temperature Graph">
-                  <p>
-                    The purpose of this project was to analyse how weather changes as you get closer to the equator. 
-                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
-                    dataset on over 500 cities.
-                  </p>
-                  <p>
-                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
-                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides
-                    the source data and visualisations created as part of the analysis, as well as explanations and descriptions
-                    of any trends and correlations witnessed.
-                  </p>
+<!-- Start of Visualisations imageNav Area -->
+        <div class="col-lg-5 col-md-12">
+          <div class="box">
+            <h4 class="title">Visualisations</h4>
+            <hr>
+            <div class="container">
+              <div class="row" style="padding-bottom: 30px;">
+                <div class="col-6">
+                  <a href="visualisations/temp.html">
+                    <img class="panel" src="assets/images/Fig1.png" alt="Max Temperature Graph" width="400px" height="400px">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="visualisations/humidity.html">
+                    <img class="panel" src="assets/images/Fig2.png" alt="Humidity Graph">
+                  </a>
                 </div>
               </div>
-              <div class="col-lg-5 col-md-12">
-                <div class="box">
-                  <h5 class="title">Visualizations</h5>
-                  <hr>
-                  <div class="container">
-                    <div class="row" style="padding-bottom: 30px;">
-                      <div class="col-6">
-                        <a href="visualisations/maxTemp.html">
-                          <img class="panel" src="assets/images/Lat_vs_MaxTemp.png" alt="Max Temperature Graph">
-                        </a>
-                      </div>
-                      <div class="col-6">
-                        <a href="visualisations/humidity.html">
-                          <img class="panel" src="assets/images/Lat_vs_Humidity.png" alt="Humidity Graph">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row" style="padding-bottom: 30px;">
-                      <div class="col-6">
-                        <a href="visualisations/cloudiness.html">
-                          <img class="panel" src="assets/images/Lat_vs_Cloudiness.png" alt="Cloudiness Graph">
-                        </a>
-                      </div>
-                      <div class="col-6">
-                        <a href="visualisations/windSpeed.html">
-                          <img class="panel" src="assets/images/Lat_vs_Windspeed.png" alt="Wind Speed Graph">
-                        </a>
-                      </div>          
-                    </div>
-                  </div>
+              <div class="row" style="padding-bottom: 30px;">
+                <div class="col-6">
+                  <a href="visualisations/cloudiness.html">
+                    <img class="panel" src="assets/images/Fig3.png" alt="Cloudiness Graph">
+                  </a>
                 </div>
+                <div class="col-6">
+                  <a href="visualisations/wind.html">
+                    <img class="panel" src="assets/images/Fig4.png" alt="Wind Speed Graph">
+                  </a>
+                </div>          
               </div>
             </div>
           </div>
-
-
-          <!-- End of the Visualisations imageNav Area -->
+        </div>
+  <!-- End of the Visualisations imageNav Area -->
     <!-- End of container -->
 
     <!-- jQuery CDN -->

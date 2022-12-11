@@ -10,7 +10,8 @@
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
@@ -18,9 +19,82 @@
 
   <body>
     <!-- Start of navbar -->
+    <div class="navigation">      
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>            
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="visualisations/temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="visualisations/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="visualisations/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="visualizsations/wind.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>            
+      </nav>       
+    </div>
     <!-- End of navbar -->
 
     <!-- Start of container -->
+    <div class="container">
+      <div class="row">
+        <div>
+    <!-- Start of Visualisations imageNav Area -->
+          <div class="box">
+            <h3 class="title">Comparison: Latitude vs. X</h3>
+            <hr>
+            <p>Click any graph for more information.</p>
+            <div class="container" style="padding-bottom: 20px;">
+              <div class="row" >
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">vs. Max Temperature</div>
+                  <a href="visualisations/temp.html">
+                    <img class="panel" src="assets/images/Fig1.png" alt="Max Temperature Graph">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">vs. Humidity</div>
+                  <a href="visualisations/humidity.html">
+                    <img class="panel" src="assets/images/Fig2.png" alt="Humidity Graph">
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">vs. Cloudiness</div>
+                  <a href="visualisations/cloudiness.html">
+                    <img class="panel" src="assets/images/Fig3.png" alt="Cloudiness Graph">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-12" style="padding: 30px;">
+                  <div class="title">vs. Wind Speed</div>
+                  <a href="visualisations/wind.html">
+                    <img class="panel" src="assets/images/Fig4.png" alt="Wind Speed Graph">
+                  </a>
+                </div>          
+              </div>
+            </div>
+          </div>
+          <!-- End of the Visualisations imageNav Area -->
+        </div>
+      </div>
+    </div>
     <!-- End of container -->
 
     <!-- jQuery CDN -->
@@ -29,5 +103,4 @@
     <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
-
 </html>
